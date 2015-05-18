@@ -1,4 +1,4 @@
-# AxAccordionControl
+# AxButtonListControl
 
 > A row of Bootstrap buttons, provided as an AngularJS directive.
 
