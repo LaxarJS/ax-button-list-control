@@ -1,7 +1,7 @@
 {
-   "name": "laxarjs.ax-button-list-control",
+   "name": "laxar-button-list-control",
    "version": "1.0.0-pre",
-   "description": "A row of Bootstrap buttons, provided as an AngularJS directive.",
+   "description": "Wraps a row of Bootstrap buttons as an AngularJS directive, for LaxarJS widgets.",
    "authors": [],
    "license": "MIT",
    "main": "ax-button-list-control.js",

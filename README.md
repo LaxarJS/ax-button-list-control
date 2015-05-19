@@ -1,6 +1,6 @@
 # AxButtonListControl
 
-> A row of Bootstrap buttons, provided as an AngularJS directive.
+> Wraps a row of Bootstrap buttons as an AngularJS directive, for LaxarJS widgets.
 
 The button list directive can be used to render a list of buttons in a very simple way. 
 It is optimized for high-performance in certain usage scenarios.
@@ -19,16 +19,16 @@ For general information on installing, styling and optimizing controls, have a l
 
 ### Setup Using Bower
 
-Install the control:
+Install the control into your LaxarJS application:
 
 ```sh
-bower install laxarjs.ax-button-list-control
+bower install laxar-button-list-control
 ```
 
-Reference the control from the `widget.json` of your widget:
+Now you may reference the control from the `widget.json` of your widget:
  
 ```json
-   "controls": [ "laxarjs.ax-button-list-control" ]
+   "controls": [ "laxar-button-list-control" ]
 ```
 
 
@@ -45,22 +45,22 @@ Thus the button from the given list is available as `button` to the bound functi
 HTML/AngularJS view template:
 
 ```html
-  <div data-ax-button-list="model.buttons" data-ax-button-list-click="handleButtonClicked( button )"></div>
+<div data-ax-button-list="buttons"
+     data-ax-button-list-click="handleButtonClicked( button )"></div>
 ```
 
 Widget controller code:
-```javascript
-$scope.model = {
-   buttons: [
-      {
-         htmlLabel: 'Click Me!',
-         classes
-      } // , ...
-   ]
-};
-$scope.handleButtonClicked = function( button ) {
-   // ... do some stuff
-}
+
+```js
+$scope.buttons = [
+   {
+      htmlLabel: 'Click Me!',
+      id: $scope.id( 'first button' ),
+      classes: [ 'btn-info', 'btn-large' ]
+   }
+];
+
+$scope.handleButtonClicked = function( button ) { /* ... */ }
 ```
 
 For each button model, the following properties are supported:
