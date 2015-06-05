@@ -1,6 +1,6 @@
 {
    "name": "laxar-button-list-control",
-   "version": "1.0.0-alpha.0",
+   "version": "1.1.0-pre",
    "description": "Wraps a row of Bootstrap buttons as an AngularJS directive, for LaxarJS widgets.",
    "authors": [],
    "license": "MIT",
