@@ -1,13 +1,13 @@
-# AxButtonListControl
+# laxar-button-list-control
 
 > Wraps a row of Bootstrap buttons as an AngularJS directive, for LaxarJS widgets.
 
-The button list directive can be used to render a list of buttons in a very simple way. 
+The button list directive can be used to render a list of buttons in a very simple way.
 It is optimized for high-performance in certain usage scenarios.
 The use of `ngRepeat` is therefore explicitly avoided.
 It thus has some known (but for this case well acceptable) limitations:
 * As soon as a non-empty list to the axButtonList binding is available, the according buttons are rendered in the given order using the template found with the directive.
-* When the rendering has finished the directive disconnects from future updates to the list. 
+* When the rendering has finished the directive disconnects from future updates to the list.
   Thus all changes made to the list won't be reflected in the rendered button list.
   Changes to items within in the button will nevertheless be updated in the view thanks to AngularJS' scopes.
 
@@ -26,7 +26,7 @@ bower install laxar-button-list-control
 ```
 
 Now you may reference the control from the `widget.json` of your widget:
- 
+
 ```json
    "controls": [ "laxar-button-list-control" ]
 ```
