@@ -45,8 +45,8 @@ Thus the button from the given list is available as `button` to the bound functi
 HTML/AngularJS view template:
 
 ```html
-<div data-ax-button-list="buttons"
-     data-ax-button-list-click="handleButtonClicked( button )"></div>
+<div ax-button-list="buttons"
+     ax-button-list-click="handleButtonClicked( button )"></div>
 ```
 
 Widget controller code:

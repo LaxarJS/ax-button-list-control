@@ -5,7 +5,7 @@
  */
 
 import * as ng from 'angular';
-import htmlButtonTemplate from 'html-loader!./laxar-button-list-control.html';
+import htmlButtonTemplate from './laxar-button-list-control.html';
 
 const DEBOUNCE_TIME_MS = 300;
 const directiveName = 'axButtonList';
