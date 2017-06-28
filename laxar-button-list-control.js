@@ -5,6 +5,7 @@
  */
 
 import * as ng from 'angular';
+import 'angular-sanitize';
 import htmlButtonTemplate from './laxar-button-list-control.html';
 
 const DEBOUNCE_TIME_MS = 300;
@@ -36,6 +37,6 @@ const directive = [ '$compile', $compile => {
    };
 } ];
 
-export const name = ng.module( `${directiveName}Control`, [] )
+export const name = ng.module( `${directiveName}Control`, [ 'ngSanitize' ] )
    .directive( directiveName, directive )
    .name;
