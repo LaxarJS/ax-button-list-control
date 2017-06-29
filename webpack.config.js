@@ -5,21 +5,29 @@
  */
 /* eslint-env node */
 
+const path = require( 'path' );
 const pkg = require( './package.json' );
 
 const webpack = require( 'laxar-infrastructure' ).webpack( {
    context: __dirname,
-   rules: [
-      {
-         test: /\.js$/,
-         exclude: 'node_modules',
-         loader: 'babel-loader'
-      },
-      {
-         test: /\.html$/,
-         loader: 'text-loader'
-      }
-   ]
+   module: {
+      rules: [
+         {
+            test: /\.js$/,
+            exclude: [
+               path.resolve( __dirname, 'node_modules' )
+            ],
+            loader: 'babel-loader'
+         },
+         {
+            test: /\.html$/,
+            exclude: [
+               path.resolve( __dirname, 'node_modules' )
+            ],
+            loader: 'text-loader'
+         }
+      ]
+   }
 } );
 
 module.exports = [

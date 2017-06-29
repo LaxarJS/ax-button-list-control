@@ -2,7 +2,7 @@
 
 ## Last Changes
 
-
+## v2.0.0
 ## v2.0.0-rc.0
 
 - [#4](https://github.com/LaxarJS/laxar-button-list-control/issues/4): added ngSanitize as control module dependency

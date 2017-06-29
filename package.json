@@ -1,6 +1,6 @@
 {
   "name": "laxar-button-list-control",
-  "version": "2.0.0-rc.0",
+  "version": "2.0.0",
   "description": "Wraps a row of Bootstrap buttons as an AngularJS directive, for LaxarJS widgets",
   "homepage": "http://laxarjs.org",
   "main": "laxar-button-list-control.js",
@@ -31,8 +31,8 @@
     "eslint": "^3.17.1",
     "eslint-config-laxarjs": "^0.3.0",
     "karma": "^1.5.0",
-    "laxar": "^2.0.0-rc.3",
-    "laxar-infrastructure": "^0.1.0-alpha.4",
+    "laxar": "^2.0.0",
+    "laxar-infrastructure": "^2.0.0",
     "text-loader": "^0.0.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
@@ -40,7 +40,7 @@
   "peerDependencies": {
     "angular": "^1.5.11",
     "angular-sanitize": "^1.5.11",
-    "laxar": "^2.0.0-rc.3"
+    "laxar": "^2.0.0"
   },
   "bugs": {
     "url": "https://github.com/LaxarJS/laxar-button-list-control/issues",
